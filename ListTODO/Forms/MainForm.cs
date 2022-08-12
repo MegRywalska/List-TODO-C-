@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ListTODO.Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,26 @@ namespace ListTODO
         public MainForm()
         {
             InitializeComponent();
+
+            ShowLogin();
+        }
+
+        public void ShowLogin()
+        {
+            Controls.Clear();
+            Controls.Add(new Login(this));
+        }
+
+        public void ShowTasks()
+        {
+            Controls.Clear();
+            Controls.Add(new Tasks(this));
+        }
+
+        public void ShowRegister()
+        {
+            Controls.Clear();
+            Controls.Add(new Register(this));
         }
 
         private void MainForm_Load(object sender, EventArgs e)

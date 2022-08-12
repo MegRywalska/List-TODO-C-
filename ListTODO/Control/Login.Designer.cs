@@ -1,4 +1,4 @@
-﻿namespace ListTODO.Controll
+﻿namespace ListTODO.Control
 {
     partial class Login
     {
@@ -92,6 +92,7 @@
             this.btnSingIn.TabIndex = 3;
             this.btnSingIn.Text = "Sing in";
             this.btnSingIn.UseVisualStyleBackColor = false;
+            this.btnSingIn.Click += new System.EventHandler(this.SingInButtonClick);
             // 
             // btnSingUp
             // 
@@ -106,19 +107,21 @@
             this.btnSingUp.TabIndex = 4;
             this.btnSingUp.Text = "Sing up";
             this.btnSingUp.UseVisualStyleBackColor = false;
+            this.btnSingUp.Click += new System.EventHandler(this.SingUpButtonClick);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BackgroundImage = global::ListTODO.Properties.Resources.Red_Sunset;
             this.Controls.Add(this.btnSingUp);
             this.Controls.Add(this.btnSingIn);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbLogin);
             this.Controls.Add(this.lblValidationLogin);
             this.Font = new System.Drawing.Font("Courier New", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Size = new System.Drawing.Size(700, 900);
             this.ResumeLayout(false);

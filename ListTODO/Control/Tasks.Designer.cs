@@ -1,4 +1,4 @@
-﻿namespace ListTODO.Controll
+﻿namespace ListTODO.Control
 {
     partial class Tasks
     {
@@ -150,6 +150,7 @@
             this.btnSingOut.TabIndex = 9;
             this.btnSingOut.Text = "Sing out";
             this.btnSingOut.UseVisualStyleBackColor = false;
+            this.btnSingOut.Click += new System.EventHandler(this.SingOutButtonClick);
             // 
             // lblValidationLogin
             // 
@@ -166,6 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ListTODO.Properties.Resources.Red_Sunset;
             this.Controls.Add(this.lblValidationLogin);
             this.Controls.Add(this.btnSingOut);
             this.Controls.Add(this.button2);
@@ -174,7 +176,7 @@
             this.Controls.Add(this.taskList);
             this.Font = new System.Drawing.Font("Courier New", 10.8F);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(92)))), ((int)(((byte)(125)))));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Tasks";
             this.Size = new System.Drawing.Size(700, 900);
             this.ResumeLayout(false);
