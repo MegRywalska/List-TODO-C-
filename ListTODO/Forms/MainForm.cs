@@ -1,4 +1,5 @@
-﻿using ListTODO.Control;
+﻿using ListTODO.Class;
+using ListTODO.Control;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,11 @@ namespace ListTODO
 {
     public partial class MainForm : Form
     {
+        private UserManager userManager;
         public MainForm()
         {
             InitializeComponent();
+            userManager = new UserManager();
 
             ShowLogin();
         }
@@ -26,10 +29,10 @@ namespace ListTODO
             Controls.Add(new Login(this));
         }
 
-        public void ShowTasks()
+        public void ShowTasks(User user)
         {
             Controls.Clear();
-            Controls.Add(new Tasks(this));
+            Controls.Add(new Tasks(this, user));
         }
 
         public void ShowRegister()

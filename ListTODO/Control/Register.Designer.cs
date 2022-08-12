@@ -46,9 +46,9 @@
             this.btnSingUp.Name = "btnSingUp";
             this.btnSingUp.Size = new System.Drawing.Size(200, 60);
             this.btnSingUp.TabIndex = 9;
-            this.btnSingUp.Text = "Sing up";
+            this.btnSingUp.Text = "Sign up";
             this.btnSingUp.UseVisualStyleBackColor = false;
-            this.btnSingUp.Click += new System.EventHandler(this.SingUpButtonClick);
+            this.btnSingUp.Click += new System.EventHandler(this.SignUpButtonClick);
             // 
             // btnSingIn
             // 
@@ -61,9 +61,9 @@
             this.btnSingIn.Name = "btnSingIn";
             this.btnSingIn.Size = new System.Drawing.Size(200, 60);
             this.btnSingIn.TabIndex = 8;
-            this.btnSingIn.Text = "Sing in";
+            this.btnSingIn.Text = "Sign in";
             this.btnSingIn.UseVisualStyleBackColor = false;
-            this.btnSingIn.Click += new System.EventHandler(this.SingInButtonClick);
+            this.btnSingIn.Click += new System.EventHandler(this.SignInButtonClick);
             // 
             // tbPassword
             // 

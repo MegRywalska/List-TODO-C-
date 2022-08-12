@@ -37,6 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnSingOut = new System.Windows.Forms.Button();
             this.lblValidationLogin = new System.Windows.Forms.Label();
+            this.lblUserSignedUp = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // taskList
@@ -148,9 +149,9 @@
             this.btnSingOut.Name = "btnSingOut";
             this.btnSingOut.Size = new System.Drawing.Size(215, 60);
             this.btnSingOut.TabIndex = 9;
-            this.btnSingOut.Text = "Sing out";
+            this.btnSingOut.Text = "Sign out";
             this.btnSingOut.UseVisualStyleBackColor = false;
-            this.btnSingOut.Click += new System.EventHandler(this.SingOutButtonClick);
+            this.btnSingOut.Click += new System.EventHandler(this.SignOutButtonClick);
             // 
             // lblValidationLogin
             // 
@@ -163,11 +164,25 @@
             this.lblValidationLogin.Size = new System.Drawing.Size(0, 31);
             this.lblValidationLogin.TabIndex = 10;
             // 
+            // lblUserSignedUp
+            // 
+            this.lblUserSignedUp.AutoSize = true;
+            this.lblUserSignedUp.BackColor = System.Drawing.Color.White;
+            this.lblUserSignedUp.Font = new System.Drawing.Font("Courier New", 16F);
+            this.lblUserSignedUp.Location = new System.Drawing.Point(468, 16);
+            this.lblUserSignedUp.MinimumSize = new System.Drawing.Size(215, 60);
+            this.lblUserSignedUp.Name = "lblUserSignedUp";
+            this.lblUserSignedUp.Size = new System.Drawing.Size(215, 60);
+            this.lblUserSignedUp.TabIndex = 11;
+            this.lblUserSignedUp.Text = "UserSignedUp";
+            this.lblUserSignedUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Tasks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ListTODO.Properties.Resources.Red_Sunset;
+            this.Controls.Add(this.lblUserSignedUp);
             this.Controls.Add(this.lblValidationLogin);
             this.Controls.Add(this.btnSingOut);
             this.Controls.Add(this.button2);
@@ -195,5 +210,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnSingOut;
         private System.Windows.Forms.Label lblValidationLogin;
+        private System.Windows.Forms.Label lblUserSignedUp;
     }
 }

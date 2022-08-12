@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\User.cs" />
+    <Compile Include="Class\UserManager.cs" />
     <Compile Include="Control\Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -107,9 +109,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Class\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\accountability.png" />
   </ItemGroup>

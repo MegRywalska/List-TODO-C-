@@ -22,14 +22,8 @@ namespace ListTODO.Control
             Dock = DockStyle.Fill;
         }
 
-        private void SingInButtonClick(object sender, EventArgs e)
-        {
-            mainFrom.ShowTasks();
-        }
+        private void SignInButtonClick(object sender, EventArgs e) => mainFrom.ShowTasks();
 
-        private void SingUpButtonClick(object sender, EventArgs e)
-        {
-            mainFrom.ShowRegister();
-        }
+        private void SignUpButtonClick(object sender, EventArgs e) => mainFrom.ShowRegister();
     }
 }

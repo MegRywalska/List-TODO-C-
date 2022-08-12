@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ListTODO.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,17 +14,18 @@ namespace ListTODO.Control
     public partial class Tasks : UserControl
     {
         private MainForm mainForm;
-        public Tasks(MainForm mainForm)
+        private User userSignedUp;
+        public Tasks(MainForm mainForm, User user)
         {
             InitializeComponent();
 
             this.mainForm = mainForm;
             Dock = DockStyle.Fill;
+
+            userSignedUp = user;
+            lblUserSignedUp.Text = userSignedUp.Login;
         }
-        private void SingOutButtonClick(object sender, EventArgs e)
-        {
-            mainForm.ShowLogin();
-        }
+        private void SignOutButtonClick(object sender, EventArgs e) => mainForm.ShowLogin();
 
         private void AddButtomClick()
         {
