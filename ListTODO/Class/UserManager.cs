@@ -8,18 +8,18 @@ namespace ListTODO.Class
 {
     public class UserManager
     {
-        private List<User> users;
+        private List<User> _users;
 
         public UserManager()
         {
-            users = new List<User>();
+            _users = new List<User>();
 
-            users.Add(new User(Guid.NewGuid(), "admin", "admin", "nimda"));
+            _users.Add(new User(Guid.NewGuid(), "admin", "admin", "nimda"));
         }
 
         public User FindUser(string login, string password)
         {
-            foreach (var user in users)
+            foreach (var user in _users)
             {
                 if(user.Login == login && user.Password == password)
                 {
@@ -28,12 +28,20 @@ namespace ListTODO.Class
             }
             return null;
         }
-
-        public void AddUser(User user)
+        
+        public bool UserExists(string login)
         {
-            users.Add(user);
+            foreach(User user in _users)
+            {
+                if (user.Login == login)
+                {
+                    return true;
+                }
+                
+            }
+            return false;
         }
 
-
+        public void AddUser(User user) => _users.Add(user);
     }
 }

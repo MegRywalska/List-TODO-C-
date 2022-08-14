@@ -14,12 +14,13 @@ namespace ListTODO
 {
     public partial class MainForm : Form
     {
-        private UserManager userManager;
+        internal UserManager UserManager { get; set; }
+
         public MainForm()
         {
             InitializeComponent();
-            userManager = new UserManager();
 
+            UserManager = new UserManager();
             ShowLogin();
         }
 
@@ -27,6 +28,11 @@ namespace ListTODO
         {
             Controls.Clear();
             Controls.Add(new Login(this));
+        }
+
+        internal void ShowTasks()
+        {
+            throw new NotImplementedException();
         }
 
         public void ShowTasks(User user)
