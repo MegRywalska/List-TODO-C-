@@ -21,23 +21,23 @@ namespace ListTODO.Class
         {
             foreach (var user in _users)
             {
-                if(user.Login == login && user.Password == password)
+                if (user.Login == login && user.Password == password)
                 {
                     return user;
                 }
             }
             return null;
         }
-        
+
         public bool UserExists(string login)
         {
-            foreach(User user in _users)
+            foreach (User user in _users)
             {
                 if (user.Login == login)
                 {
                     return true;
                 }
-                
+
             }
             return false;
         }

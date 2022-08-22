@@ -8,17 +8,17 @@ namespace ListTODO.Class
 {
     public class User
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
+        public Guid _id { get; set; }
+        public string _name { get; set; }
+        public string _login { get; set; }
+        public string _password { get; set; }
 
         public User(Guid id, string name, string login, string password)
         {
-            Id = id;
-            Name = name;
-            Login = login;
-            Password = password;
+            _id = id;
+            _name = name;
+            _login = login;
+            _password = password;
         }
     }
 }

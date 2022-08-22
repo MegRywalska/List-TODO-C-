@@ -16,7 +16,7 @@ namespace ListTODO.Control
             Dock = DockStyle.Fill;
 
             _userSignedUp = user;
-            lblUserSignedUp.Text = _userSignedUp.Login;
+
         }
         private void SignOutButtonClick(object sender, EventArgs e) => _mainForm.ShowLogin();
 
@@ -34,6 +34,6 @@ namespace ListTODO.Control
         {
 
         }
-      
+
     }
 }

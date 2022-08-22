@@ -21,6 +21,7 @@ namespace ListTODO.Control
 
             _mainFrom = mainFrom;
             Dock = DockStyle.Fill;
+            lblValidationLogin.Visible = false;
         }
 
         private void SignInButtonClick(object sender, EventArgs e)
@@ -42,7 +43,7 @@ namespace ListTODO.Control
                 }
                 else
                 {
-                    _mainFrom.ShowTasks();
+                    _mainFrom.ShowTasks(user);
                 }
             }
         }

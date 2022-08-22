@@ -30,10 +30,6 @@ namespace ListTODO
             Controls.Add(new Login(this));
         }
 
-        internal void ShowTasks()
-        {
-            throw new NotImplementedException();
-        }
 
         public void ShowTasks(User user)
         {

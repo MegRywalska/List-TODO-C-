@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Task.cs" />
+    <Compile Include="Class\TaskManager.cs" />
     <Compile Include="Class\User.cs" />
     <Compile Include="Class\UserManager.cs" />
     <Compile Include="Control\Login.cs">
